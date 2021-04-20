@@ -1,0 +1,20 @@
+Initialisierung ist das Erschaffen und setzen einer Variable auf der gleichen Zeile:
+
+	int x = 0;  // Initialisierung
+
+
+Zuweisung ist das nachträgliche setzen einer bereits existierenden Variable:
+
+	int y;
+	y = 0;      // Zuweisung
+
+
+Zuweisung ist nicht möglich, wenn Variable mit const-Referenz übergeben wurde:
+
+	int const z = 0;
+	z = 1;      // gibt einen Fehler 
+
+
+
+Beachten: Eine Variable kann nur einmal initialisiert werden.
+	  Eine (neu)Zuweisung kann mehrmals erfolgen.
