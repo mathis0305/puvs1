@@ -1,0 +1,15 @@
+Die Signatur einer Funktion besteht aus Name und Anzahl, Art und Reihenfolge der zuweisungskompatiblen Parameterdatentypen. 
+
+Eingangsparameter: Werden in Funktion gegeben.
+Durchgangsparameter: Werden in Funktion verwendet.
+Ausgangsparameter: Werden von Funktion zurück gegeben.
+
+
+Scopes:
+	var = 3: global
+	a: in Funktion sum
+	b: in Funktion sum
+	i: in main in for loop
+	var: in Funktion cube
+
+var gibt es zweimal!!!
