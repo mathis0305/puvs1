@@ -1,0 +1,57 @@
+C++: Eine effiziente, maschinennahe Programmiersprache von 1979 druch Bjarne Stroustrup entwickelt
+
+Quellcode: Text eines Computerprogramms in einer Programmiersprache, der für Menschen lesbar ist
+
+Compiler: übersetzt Quellcode in Maschinencode, der von einem Computer direkt ausgeführt werden kann
+
+Linker: führt einzelne Programmteile zu einem ausführbaren Programm zusammen
+
+Objektcode: Maschinencode, der meist noch gelinkt werden muss. 
+
+Ausführbare Datei: Datei in Maschinencode, die direkt vom Betriebssystem ausgeführt/interpretiert werden kann
+
+main(): Eine Funktion, die den Start des Programms darstellt und aus dessen body heraus üblicherweise alle anderen Funktionen aufgerufen werden. Die main-Funktion sollte in jedem Programm enthalten sein
+
+#include: importiert eine Datei ins Programm. Es kann entweder eine Standarddatei (von C++) oder eine nutzerdefinierte datei sein
+
+Kommentar: eine durch // gekennzeichnete Zeile dient der Übersichtlichkeit des Programms und wird vom Compiler überlesen
+
+Header: um nicht in jeder .cpp-Datei eines Programms dieselben Deklarationen vornehmen zu müssen und um Fehler zu vermeiden, erstellt man eine .hpp-Datei mit allen globalen Deklarationen und inkludiert sie in jede .cpp-Datei. Diese ist der Header.
+
+Programm: ist eine Ansammlung von meist mehreren Dateien (ein .hpp und mehrere .cpp) die zusammen eine Maschinenanweisung zur Lösung eines Sachverhaltes darstellen.
+
+Ausgabe: ist das, was ein Programm oder eine Funktion nach einer Ausführung zurückgibt. Meist von der Eingabe abhängig
+
+std::cout: steht für standard character output. Es zeigt an, dass als nächstes eine Ausgabe folgt, die etwas in die Konsole schreibt
+
+std::cin: steht für standard character input. Es zeigt an, dass als nächstes eine Eingabe folgt, die im Programm verwendet werden kann
+
+<<: heißt Shift-Left-Operator und hat im allgemeinen die Bedeutung einer Bitverschiebung einer Integerzahl nach links. In C++ wird << aber verwendet um nach std::cout eine Ausgabe schreiben zu können. z.B.: std::cout << "Hello World!";
+
+>>: heißt Shift-Left-Operator und hat im allgemeinen die Bedeutung einer Bitverschiebung einer Integerzahl nach rechts. In C++ wird << aber verwendet um nach std::cin eine Eingabevariable festzulegen, die dann in der Konsolenbedienung definiert werden kann
+
+Funktion: führt den zugehörigen Codeblock bei Aufruf aus. Kann Eingabeparameter haben und Werte zurückgeben. Dient der Vereinfachung und der Übersichtlichkeit eines Programms
+
+Funktionssignatur: ist der Name und die Parameter einer Funktion. Also die Schnittstelle von Funktion und restlichem Programm
+
+Deklaration: Die Erstellung eines Objekts. Es wird also eine Name und ein typ festgelegt
+
+Definition: Dem bereits deklarierten Objekt wird ein Wert oder ein Inhalt zugeschrieben
+
+Typ: Der Datentyp eines Objekts (Int, bool, double, function, class, etc.)
+
+Typkonvertierung: Die Umwandlung eines Objekts von einen Datentyp in einen Anderen (Int zu double oder bool zu Int)
+
+Variable: ist ein Objekt eines Programms. Hat einen Namen, einen Typen und nach der Definition auch einen Wert.
+
+Name: steht für eine Variable. Zur intuitiveren und leichteren Benutzung gibt man den variablen semantisch sinnvolle Namen
+
+Wert: Der Wert hinter dem Variablennamen, mit dem das Programm bei Ausführung rechnet.
+
+Initialisierung: ist das Erschaffen und setzen einer Variable auf der gleichen Zeile
+
+Zuweisung: ist das nachträgliche setzen einer bereits existierenden Variable
+
+const: Wird im Zusammenhang mit einer Variable genutzt. Ist das Versprechen, dass die Variable unverändert bleibt. Ein fehlendes const impliziert gleichzeitig das Versprechen, die Variable zu verändern
+
+Gültigkeitsbereich: engl. scope. ist der Bereich in einem Code, in dem eine Variable existiert. Außerhalb dieses Bereichs kann sie nicht verwendet werden
