@@ -1,0 +1,34 @@
+Deklaration: Die Existens einer Entität(Variable, Funktion, Typ, Namespace) für den Compiler bekannt geben.
+	     Also einen Namen für die Entität festlegen.
+
+
+Definition: Alle Entitäten, die später im Programm verwendet werden, müssen auch definiert werden.
+	    Das heißt, dass die benötigten Informationen an diese Entität gekoppelt werden müssen.
+	    Erst die Definition ordnet dem Objekt einen Speicherplatz zu.
+
+
+Wie auch schon bei Initialisierung und Zuweisung gibt es Fälle, bei denen beides in einem Schritt passiert. (int i = 0)
+
+
+Wenn man jetzt zum Beispiel eine Funktion deklariert kann das so aussehen:
+	void sum();   // Forward-Deklaration
+
+Wenn man sie dann später definiert kann sie so aussehen:
+	int sum( int x, int y) {
+		return x + y;
+	} 
+
+Letzteres wäre auch Deklaration und definition in einem, wenn man die Deklaration am Anfang weglässt.
+
+
+Variable: int i;   // Deklaration
+	  i = 0;   // Definition
+
+
+Datentypen: Ein Objekjt muss immer mit einem Datentyp deklariert werden.
+	    Diesen auch nach der Deklaration zu verändern oder Datentypen zu kombinieren ist an bestimmten Stellen möglich.
+
+
+Das Schlüsselwort extern vor einer Variable sagt aus, dass die Variable bereits in einer anderen Datei existiert und diese verwendet werden soll:
+	int i = 0      // in file1.cpp
+	extern int i   // in file2.cpp
